@@ -30,5 +30,6 @@ Route::name('api.')->group(function() {
     Route::resource('posts', PostController::class)->only([
         'index',
         'show'
-    ]);
+    ]); //con il resourse noi chiamavamo le 7 rotte delle crud con la funzionalità only gli passo le uniche due rotte che deve utilizzare
+
 });

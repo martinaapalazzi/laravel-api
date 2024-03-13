@@ -15,8 +15,16 @@ class PostController extends Controller
         $posts = Post::with('type', 'technologies')->paginate(5);
 
         return response()->json([
+
             'success' => true,
             'results' => $posts,
+
+            // OPPURE 
+            //'code'=> 200,
+            //'message' => 'success',
+            //'results'=> [ 
+            //    'posts' => $posts,
+            //],
         ]);
     }
 
@@ -25,8 +33,16 @@ class PostController extends Controller
         $post = Post::where('slug', $slug)->firstOrFail();
 
         return response()->json([
+
             'success'=> true,
             'results'=> $post,
+            
+            // OPPURE
+            //'code'=> 200,
+            //'message' => 'success',
+            //'results'=> [ 
+            //    'post' => $post,
+            //]
         ]);
     }
 }
