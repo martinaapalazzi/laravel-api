@@ -88,3 +88,8 @@ L'esercizio di oggi è suddiviso in milestone ed è importante che ne seguiate l
 
 # Bonus:
 - Gestire la paginazione dei risultati
+
+# COMANDI 
+- 'allowed_origins' => [env('APP_FRONTEND_URL', 'http://localhost:5174')], IN CONFIG CORS.PHP
+- APP_FRONTEND__URL=http://localhost:5174, IN .ENV (da scrivere te a mano)
+
