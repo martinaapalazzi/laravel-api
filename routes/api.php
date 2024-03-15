@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 // Controllers
 use App\Http\Controllers\Api\PostController;
+use App\Http\Controllers\Api\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,5 @@ Route::name('api.')->group(function() {
         'show'
     ]); //con il resourse noi chiamavamo le 7 rotte delle crud con la funzionalità only gli passo le uniche due rotte che deve utilizzare
 
+    Route::post('/contacts', [ContactController::class, 'store'])->name('contacts.store');
 });
