@@ -25,7 +25,7 @@ class StoreRequest extends FormRequest
             'name' => 'required|max:64',
             'email' => 'required|max:255',
             'message' => 'required|max:2048',
-            'accepted' => 'required|boolean|accepted',
+            'accepted' => 'required|boolean',
         ];
     }
 }
